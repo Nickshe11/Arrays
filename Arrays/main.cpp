@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define tab "\t"
@@ -22,7 +22,7 @@ void main()
 		if (arr[i] = arr[i + 1])
 		{
 		counter++;
-		cout << "×èñëî " << arr[i] << " ïîâòîðÿåòñÿ " << counter << " ðàç" << endl;
+		cout << "Ð§Ð¸ÑÐ»Ð¾ " << arr[i] << " Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ " << counter << " Ñ€Ð°Ð·" << endl;
 		}
 	}
 		
