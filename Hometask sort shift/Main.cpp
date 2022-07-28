@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #define tab "\t"
 #define delimiter "--------------------------------"
 
@@ -7,8 +7,8 @@
 //#define Comparison
 
 using namespace std;
-const int ROWS = 3;//строки
-const int COLS = 4;//столбцы
+const int ROWS = 3;//СЃС‚СЂРѕРєРё
+const int COLS = 4;//СЃС‚РѕР»Р±С†С‹
 
 void create(int arr[ROWS][COLS], const int ROWS, const int COLS);
 void print(int arr[ROWS][COLS], const int ROWS, const int COLS);
@@ -22,7 +22,7 @@ void main()
 	create(arr, ROWS,COLS);
 	print(arr, ROWS, COLS);
 	
-	//Сортировка по возрастанию
+	//РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -57,15 +57,15 @@ void main()
 			}
 		}
 	}
-	//Вывод массива после сортировки
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РїРѕСЃР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё
 	cout << endl;
 	print(arr, ROWS, COLS);
 #endif // SORT
 
 #ifdef UniqueRandom
-	// Заполнение массива уникальными числами
+	// Р—Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР° СѓРЅРёРєР°Р»СЊРЅС‹РјРё С‡РёСЃР»Р°РјРё
 
-	cout << delimiter << "\nЗаполнение массива уникальными числами" << endl;
+	cout << delimiter << "\nР—Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР° СѓРЅРёРєР°Р»СЊРЅС‹РјРё С‡РёСЃР»Р°РјРё" << endl;
 	mark = 0;
 	int brr[ROWS][COLS]{};
 	for (int i = 0; i < ROWS; i++)
@@ -118,27 +118,27 @@ void main()
 
 		}
 	}
-	//Вывод массива после заполнения
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РїРѕСЃР»Рµ Р·Р°РїРѕР»РЅРµРЅРёСЏ
 	cout << endl;
 	print(brr, ROWS, COLS);
 
 #endif//UniqueRandom
 
 #ifdef Comparison
-	// Сравнение элементов массива
+	// РЎСЂР°РІРЅРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°
 
-	cout << delimiter << "\nСравнение элементов массива" << endl;
+	cout << delimiter << "\nРЎСЂР°РІРЅРµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°" << endl;
 	mark = 0;
 	box = 0;
 	int counter = 0;
-	//Создание массива
+	//РЎРѕР·РґР°РЅРёРµ РјР°СЃСЃРёРІР°
 	int crr[ROWS][COLS]{};
 	create(crr, ROWS, COLS);
 
-	//Вывод массива после заполнения
+	//Р’С‹РІРѕРґ РјР°СЃСЃРёРІР° РїРѕСЃР»Рµ Р·Р°РїРѕР»РЅРµРЅРёСЏ
 	cout << endl;
 	print(crr, ROWS, COLS);
-	//Сравнение
+	//РЎСЂР°РІРЅРµРЅРёРµ
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -168,7 +168,7 @@ void main()
 					}
 				}
 			}
-			if (counter > 0)//Если нашли совпадения
+			if (counter > 0)//Р•СЃР»Рё РЅР°С€Р»Рё СЃРѕРІРїР°РґРµРЅРёСЏ
 			{
 				for (int k = i; k >= 0; k--)
 				{
@@ -196,7 +196,7 @@ void main()
 			}
 			if (mark == 0 && counter > 0)
 			{
-				cout << "\nЧисло " << crr[i][j] << " встречается " << counter << " раз." << endl;
+				cout << "\nР§РёСЃР»Рѕ " << crr[i][j] << " РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ " << counter << " СЂР°Р·." << endl;
 			}
 		}
 	}
