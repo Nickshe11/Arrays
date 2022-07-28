@@ -6,24 +6,43 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "");
-	int arr[10]{};
-	int a = 0, b = 0, counter = 0;
-	for (int i = 0; i < 10; i++)
+	const int MAX = 15;
+	int arr[MAX]{};
+	int mark = 0, counter = 0;
+	for (int i = 0; i < MAX; i++)
 	{
 		arr[i] = rand() % 10;
 	}
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < MAX; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
-	for (int i = 0; i < 9; i++)
+	for (int j = 0; j < MAX; j++)
 	{
-		if (arr[i] = arr[i + 1])
+		counter = 0;
+		mark = 0;
+		for (int i = j; i < MAX; i++)
 		{
-		counter++;
-		cout << "Число " << arr[i] << " повторяется " << counter << " раз" << endl;
+			if (arr[j] == arr[i + 1])
+			{
+				counter++; mark = 1;
+			}
+		}
+		if (counter > 0)
+		{
+			for (int k = j - 1; k >= 0; k--)
+			{
+				if (arr[j] == arr[k])
+				{
+					mark = 2;
+				}
+			}
+		}
+		if (mark == 1)
+		{
+			cout << "Число " << arr[j] << " повторяется " << counter << " раз" << endl;
 		}
 	}
-		
+
 }
